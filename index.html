@@ -12,10 +12,10 @@
 
         <!--Google Stylesheet-->
 
-        <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="scss/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -24,16 +24,63 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="splash_wrapper">
-            <canvas id="initial_splash" width="500" height="375">
-            </canvas>
+        <div class="nav_global--wrapper">
+            <nav id="global">
+                <div class="nav_link">
+                    <ul>
+                        <li><span>Home</span></li>
+                        <li><span>About</span></li>
+                        <li><span>Portfolio</span></li>
+                        <li><span>Contact</span></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
+        <section class="landing_panel">
+            <!--<canvas id="landing_canvas">
+            </canvas>-->
+            <button id="glowy_toggle">Toggle Glowy Canvas? 
+                <span>WARNING: HUGE PERFORMANCE LOSS<span>
+            </button>
+            <div id="glowy_canvas">
+            </div>
+            <div id="landing_canvas">
+                <div class="content_fg">
+                    <div class="hero1"></div>
+                    <div class="hero2"></div>
+                </div>
+                <div class="content_text">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                    <div class="l4"></div>
+                    <div class="l5"></div>
+                </div>
+            </div>
+            <div class="landing_content">
+            <hgroup>
+                <h1>We are Boxer6</h1>
+                <!-- <svg viewBox = "0,0,400,1">
+                    <line class="top" x1="0" y1="0" x2="1170" y2="0"/>
+                    <line class="left" x1="0" y1="-180" x2="0" y2="90"/>
+                    <line class="right" x1="383" y1="0" x2="383" y2="270"/>
+                    <line class="bottom" x1="-780" y1="90" x2="390" y2="90"/>
 
+                </svg> -->
+            </hgroup>
+
+            <p>We are a creative web and graphic design agency based in Karachi, Pakistan.</p>
+            </div>
+        </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/splash.js"></script>
+        <script src="js/glowyshit.js"></script>
+        <script src="js/canvas_alt.js"></script>
+
+        <!--DISABLED SINCE COULDNT FIGURE OUT SOME STUFF
+        <script src="js/canvas.js"></script>-->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

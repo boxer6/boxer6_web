@@ -1,0 +1,571 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Main BG/FG colors
+   ========================================================================== */
+body {
+    color:#eee;
+    position:relative;
+}
+
+/* ==========================================================================
+   Navigation Styles - Global
+   ========================================================================== */
+
+
+div.nav_global--wrapper {
+    height:12vh;
+    @media(max-width:480px){
+        height:100vh;
+    }
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+nav#global {
+    height:100%;
+    width:100%;
+    position:relative;
+    display:flex;
+    div {
+        position:relative;
+        display:flex;
+        align-items:center;
+        vertical-align:middle;
+        justify-content: flex-end;
+    }
+    @media(max-width:480px){
+        div {
+            justify-content:center;
+            height:100%;
+        }
+    }
+    div.nav_link {
+        width:100%;
+        padding-right:10%;
+        @media(max-width:480px){
+        padding:0;
+            ul {
+                flex-direction:column;
+                height:100%;
+                padding:0;
+            }
+        }
+        ul {
+            list-style:none;
+            text-align:right;
+            display:flex;
+            align-items:center;
+            vertical-align:middle;
+            li {
+                flex-grow:1;
+                font-family:"Steelfish";
+                font-size:1.2rem;
+                text-transform:uppercase;
+                position:relative;
+                @media(max-width:480px){
+                        display:block;
+                        align-items:center;
+                        text-align:center;
+                        line-height:25vh;
+                    }  
+
+            } 
+            li::before {
+                content:'/';
+                margin:1vw;
+                @media(max-width:480px){
+                        content:' ';
+                        display:block;
+                        height:2px;
+                        margin:auto;
+                        width:80vw;
+                        background:#eee;
+                    }
+            }
+            li:first-child::before {
+                display:none;
+            }
+            span {
+                position:relative;
+            }
+    }
+    }
+
+}
+
+/* ==========================================================================
+   Landing Panel Styles
+   ========================================================================== */
+
+
+section.landing_panel {
+    background:#332f40;
+    height:100vh;
+    width:100vw;
+    div#landing_canvas {
+        height:100%;
+        width:100%;
+        position:absolute;
+        .content_fg {
+            height:100%;
+            width:100%;
+            .hero1 {
+                $var : 1.45;
+                position:absolute;
+                background-image:url('/img/landing/panel_boxer/hero1.png');
+                background-size:contain;
+                height:(56.6vmin*$var);
+                width:(86vmin*$var);
+                top:10%;
+                left:10%;
+                z-index:10;
+                opacity:0.3;
+            }
+            .hero2 {
+                $var : 1.45;
+                position:absolute;
+                background-image:url('/img/landing/panel_boxer/hero2.png');
+                background-size:contain;
+                height:(33.7vmin*$var);
+                width:(38.7vmin*$var);
+                top:10%;
+                left:60%;
+                z-index:20;
+                opacity:0.5;
+            }
+        }
+        div.content_text {
+                  background-image:url('/img/landing/panel_boxer/text/l1.png');
+         > div {
+            position:absolute;
+            top:0;
+            background-size:contain;
+            background-repeat:no-repeat;
+            z-index:100;
+            opacity:0.45;
+         }
+         .l1 {
+            background-image:url('/img/landing/panel_boxer/text/l1.png');
+            $var:0.14;
+            width:(78vmin*$var);
+            height:(96vmin*$var);
+            top:10%;
+            left:10%;
+         }
+         .l2 {
+            background-image:url('/img/landing/panel_boxer/text/l2.png');
+            $var:0.14;
+            width:(103vmin*$var);
+            height:(103vmin*$var);
+            top:15%;
+            left:65%;
+
+        }
+         .l3 {
+            background-image:url('/img/landing/panel_boxer/text/l3.png');
+             $var:0.14;
+            width:(93vmin*$var);           
+            height:(98vmin*$var);
+            top:60%;
+            left:15%;
+         }
+         .l4 {
+            background-image:url('/img/landing/panel_boxer/text/l4.png');
+            $var:0.14;
+            height:(111vmin*$var);
+            width:(78vmin*$var);
+            top:40%;
+            left:55%;
+         }
+         .l5 {
+            background-image:url('/img/landing/panel_boxer/text/l5.png');
+            $var:0.14;
+            height:(127vmin*$var);
+            width:(113vmin*$var);
+            top:70%;
+            left:70%;
+         }
+        }
+    }
+    div.landing_content {
+        position:absolute;
+        font-family:Colaborate-Thin;
+        font-weight:100;
+        z-index:400;
+        top:69%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        text-align:center;
+        width:38vmax;
+        max-width: 30vw;
+        /*pointer-events:none;*/
+            padding:2%;
+        hgroup {
+            padding:1%;
+            position:relative;
+            border:5px solid;
+            h1 {
+                font-weight:100;
+                font-size:3.3rem;
+                text-transform:uppercase;
+                font-family:Steelfish;
+                margin:0;
+                letter-spacing:6px;
+
+            }
+            svg {
+               position:absolute;
+               top:0;
+               left:5%;
+               width:90%;
+               height:100%;
+               overflow:hidden;
+               line {
+                stroke-width:10;
+                stroke:#fff;
+                fill:none;
+                transition:transform .6s ease-out;
+               }
+               line.top,.bottom {
+                stroke-dasharray:390;
+               }
+               line.left,.right {
+                stroke-dasharray:90;
+               }
+            }
+        }
+    hgroup:hover svg line.top {
+                transform:translateX(-780px);
+            }
+    hgroup:hover svg line.bottom {
+                transform:translateX(+780px);
+            }
+
+     hgroup:hover svg line.left {
+                transform:translateY(+180px);
+            }
+     hgroup:hover svg line.right {
+                transform:translateY(-180px);
+            }
+            
+        p {
+            font-family: Raleway;
+            font-weight: 300;
+            margin-top: 5vh;
+            letter-spacing: 1.6px;
+            font-size: 1rem;
+            line-height: 1.9rem;
+        }
+    }
+}
+
+
+
+
+/* ==========================================================================
+   Experimental Stuff
+   ========================================================================== */
+
+   #glowy_canvas {
+    position:absolute;
+    height:100%;
+    width:100%;
+    pointer-events:none;
+    overflow:hidden;
+        display:none;
+    point {
+        height:4px;
+        width:4px;
+        display:inline-block;
+        position:relative;
+        top:0%;
+        z-index:5;
+        margin:0.3%;
+        background-color:#eee;
+        opacity:0.05;
+        transition:0.5s opacity, 0.6s color ease-in-out;
+    }
+    .glowy {
+        opacity:0.3;
+    }
+   }
+
+button#glowy_toggle {
+    position:fixed;
+    font-family: Raleway;
+    font-weight: 300;
+    padding:2vh 2vw;
+    background:#4F4865;
+    border:0;
+    z-index:3000;
+    text-align:left;
+    opacity:0.3;
+    transition:opacity 0.2s;
+    span {
+        display:block;
+        font-size:0.8em;
+        color:#FFB4B4;
+    }
+}
+button#glowy_toggle:hover {
+        opacity:1;
+    }
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
