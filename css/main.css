@@ -142,7 +142,7 @@ nav#global div.nav_link ul {
 }
 nav#global div.nav_link ul li {
   flex-grow: 1;
-  font-family: "Steelfish";
+  font-family: "Intro Rust";
   font-size: 1.2rem;
   text-transform: uppercase;
   position: relative;
@@ -263,15 +263,15 @@ section.landing_panel div#landing_canvas div.content_text .l5 {
 }
 section.landing_panel div.landing_content {
   position: absolute;
-  font-family: Colaborate-Thin;
+  font-family: "Raleway";
   font-weight: 100;
   z-index: 400;
   top: 69%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 38vmax;
-  max-width: 30vw;
+  width: 41vmax;
+  max-width: 46vw;
   /*pointer-events:none;*/
   padding: 2%;
 }
@@ -282,9 +282,9 @@ section.landing_panel div.landing_content hgroup {
 }
 section.landing_panel div.landing_content hgroup h1 {
   font-weight: 100;
-  font-size: 3.3rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
-  font-family: Steelfish;
+  font-family: "Intro Rust";
   margin: 0;
   letter-spacing: 6px;
 }
@@ -321,7 +321,7 @@ section.landing_panel div.landing_content hgroup:hover svg line.right {
   transform: translateY(-180px);
 }
 section.landing_panel div.landing_content p {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-weight: 300;
   margin-top: 5vh;
   letter-spacing: 1.6px;
