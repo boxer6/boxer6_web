@@ -146,9 +146,8 @@ nav#global {
             vertical-align:middle;
             li {
                 flex-grow:1;
-                font-family:"Intro Rust";
-                font-size:1.2rem;
-                text-transform:uppercase;
+                font-family:"Raleway";
+                font-size:1.0rem;
                 position:relative;
                 @media(max-width:480px){
                         display:block;
@@ -200,7 +199,7 @@ section.landing_panel {
             .hero1 {
                 $var : 1.45;
                 position:absolute;
-                background-image:url('/img/landing/panel_boxer/hero1.png');
+                background-image:url('../img/landing/panel_boxer/hero1.png');
                 background-size:contain;
                 height:(56.6vmin*$var);
                 width:(86vmin*$var);
@@ -212,7 +211,7 @@ section.landing_panel {
             .hero2 {
                 $var : 1.45;
                 position:absolute;
-                background-image:url('/img/landing/panel_boxer/hero2.png');
+                background-image:url('../img/landing/panel_boxer/hero2.png');
                 background-size:contain;
                 height:(33.7vmin*$var);
                 width:(38.7vmin*$var);
@@ -223,7 +222,7 @@ section.landing_panel {
             }
         }
         div.content_text {
-                  background-image:url('/img/landing/panel_boxer/text/l1.png');
+                  background-image:url('../img/landing/panel_boxer/text/l1.png');
          > div {
             position:absolute;
             top:0;
@@ -233,7 +232,7 @@ section.landing_panel {
             opacity:0.45;
          }
          .l1 {
-            background-image:url('/img/landing/panel_boxer/text/l1.png');
+            background-image:url('../img/landing/panel_boxer/text/l1.png');
             $var:0.14;
             width:(78vmin*$var);
             height:(96vmin*$var);
@@ -241,7 +240,7 @@ section.landing_panel {
             left:10%;
          }
          .l2 {
-            background-image:url('/img/landing/panel_boxer/text/l2.png');
+            background-image:url('../img/landing/panel_boxer/text/l2.png');
             $var:0.14;
             width:(103vmin*$var);
             height:(103vmin*$var);
@@ -250,7 +249,7 @@ section.landing_panel {
 
         }
          .l3 {
-            background-image:url('/img/landing/panel_boxer/text/l3.png');
+            background-image:url('../img/landing/panel_boxer/text/l3.png');
              $var:0.14;
             width:(93vmin*$var);           
             height:(98vmin*$var);
@@ -258,7 +257,7 @@ section.landing_panel {
             left:15%;
          }
          .l4 {
-            background-image:url('/img/landing/panel_boxer/text/l4.png');
+            background-image:url('../img/landing/panel_boxer/text/l4.png');
             $var:0.14;
             height:(111vmin*$var);
             width:(78vmin*$var);
@@ -266,7 +265,7 @@ section.landing_panel {
             left:55%;
          }
          .l5 {
-            background-image:url('/img/landing/panel_boxer/text/l5.png');
+            background-image:url('../img/landing/panel_boxer/text/l5.png');
             $var:0.14;
             height:(127vmin*$var);
             width:(113vmin*$var);

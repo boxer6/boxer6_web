@@ -89,6 +89,7 @@ $(function(){
 
 	}) 
 
+
 /*COMMENTS SECTION
 
 10/24/2015 Swas : There's a huge performance loss. Any ideas? I was thinking SVG points instead of divs

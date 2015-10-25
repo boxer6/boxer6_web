@@ -121,9 +121,8 @@ nav#global {
       vertical-align: middle; }
       nav#global div.nav_link ul li {
         flex-grow: 1;
-        font-family: "Intro Rust";
-        font-size: 1.2rem;
-        text-transform: uppercase;
+        font-family: "Raleway";
+        font-size: 1.0rem;
         position: relative; }
         @media (max-width: 480px) {
           nav#global div.nav_link ul li {
@@ -163,7 +162,7 @@ section.landing_panel {
       width: 100%; }
       section.landing_panel div#landing_canvas .content_fg .hero1 {
         position: absolute;
-        background-image: url("/img/landing/panel_boxer/hero1.png");
+        background-image: url("../img/landing/panel_boxer/hero1.png");
         background-size: contain;
         height: 82.07vmin;
         width: 124.7vmin;
@@ -173,7 +172,7 @@ section.landing_panel {
         opacity: 0.3; }
       section.landing_panel div#landing_canvas .content_fg .hero2 {
         position: absolute;
-        background-image: url("/img/landing/panel_boxer/hero2.png");
+        background-image: url("../img/landing/panel_boxer/hero2.png");
         background-size: contain;
         height: 48.865vmin;
         width: 56.115vmin;
@@ -182,7 +181,7 @@ section.landing_panel {
         z-index: 20;
         opacity: 0.5; }
     section.landing_panel div#landing_canvas div.content_text {
-      background-image: url("/img/landing/panel_boxer/text/l1.png"); }
+      background-image: url("../img/landing/panel_boxer/text/l1.png"); }
       section.landing_panel div#landing_canvas div.content_text > div {
         position: absolute;
         top: 0;
@@ -191,31 +190,31 @@ section.landing_panel {
         z-index: 100;
         opacity: 0.45; }
       section.landing_panel div#landing_canvas div.content_text .l1 {
-        background-image: url("/img/landing/panel_boxer/text/l1.png");
+        background-image: url("../img/landing/panel_boxer/text/l1.png");
         width: 10.92vmin;
         height: 13.44vmin;
         top: 10%;
         left: 10%; }
       section.landing_panel div#landing_canvas div.content_text .l2 {
-        background-image: url("/img/landing/panel_boxer/text/l2.png");
+        background-image: url("../img/landing/panel_boxer/text/l2.png");
         width: 14.42vmin;
         height: 14.42vmin;
         top: 15%;
         left: 65%; }
       section.landing_panel div#landing_canvas div.content_text .l3 {
-        background-image: url("/img/landing/panel_boxer/text/l3.png");
+        background-image: url("../img/landing/panel_boxer/text/l3.png");
         width: 13.02vmin;
         height: 13.72vmin;
         top: 60%;
         left: 15%; }
       section.landing_panel div#landing_canvas div.content_text .l4 {
-        background-image: url("/img/landing/panel_boxer/text/l4.png");
+        background-image: url("../img/landing/panel_boxer/text/l4.png");
         height: 15.54vmin;
         width: 10.92vmin;
         top: 40%;
         left: 55%; }
       section.landing_panel div#landing_canvas div.content_text .l5 {
-        background-image: url("/img/landing/panel_boxer/text/l5.png");
+        background-image: url("../img/landing/panel_boxer/text/l5.png");
         height: 17.78vmin;
         width: 15.82vmin;
         top: 70%;
